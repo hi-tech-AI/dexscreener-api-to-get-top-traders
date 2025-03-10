@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1203</width>
+    <height>861</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Bradley Hand ITC</family>
+    <pointsize>20</pointsize>
+    <kerning>false</kerning>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Top Trader Tracker</string>
+  </property>
+  <widget class="QPushButton" name="close_btn">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>780</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic Light</family>
+     <pointsize>17</pointsize>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>1141</width>
+     <height>711</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>15</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="TopProjectTracker">
+    <attribute name="title">
+     <string>Top Project Tracker</string>
+    </attribute>
+    <widget class="QTableWidget" name="top_project_viewer">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>30</y>
+       <width>1001</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="get_top_project_btn">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>600</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Get Top Projects</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_top_project_btn">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>600</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Save File</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="PairAddressFromDexscreener">
+    <attribute name="title">
+     <string>Pair Address from Dexscreener</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>40</y>
+       <width>811</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>20</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="title">
+      <string>Contract Address</string>
+     </property>
+     <widget class="QLineEdit" name="contract_address">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>40</y>
+        <width>711</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>18</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="get_pair_address_from_dex_btn">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>600</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Get Pair Address</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_pair_address_from_dex_btn">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>600</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Save File</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="pair_address_from_dex_viewer">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>180</y>
+       <width>811</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="TopTraderTracker">
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>26</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <attribute name="title">
+     <string>Top Trader Tracker</string>
+    </attribute>
+    <widget class="QListWidget" name="top_trader_viewer">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>250</y>
+       <width>801</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="get_top_trader_btn">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>600</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Get Top Traders</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_top_trader_btn">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>600</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Save File</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>801</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>20</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="title">
+      <string>Please input pair address</string>
+     </property>
+     <widget class="QTextEdit" name="pair_address">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>40</y>
+        <width>651</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="ExcelParser">
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>15</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <attribute name="title">
+     <string>Excel Parser</string>
+    </attribute>
+    <widget class="QGroupBox" name="input_label">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>30</y>
+       <width>741</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="title">
+      <string>Input file</string>
+     </property>
+     <widget class="QListWidget" name="input_removal_file">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>681</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Yu Gothic Light</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="remove_duplicates_btn">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>600</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Run</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="remove_duplicates_viewer">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>151</y>
+       <width>821</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="import_removal_btn">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>600</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Import File...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_remove_duplicates_btn">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>600</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="InterestWalletTracker">
+    <attribute name="title">
+     <string>Interest Wallet Tracker</string>
+    </attribute>
+    <widget class="QGroupBox" name="input_label_2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>30</y>
+       <width>741</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="title">
+      <string>Input file</string>
+     </property>
+     <widget class="QListWidget" name="input_duplicates_files">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>681</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Yu Gothic Light</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTableWidget" name="duplicates_viewer">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>251</y>
+       <width>821</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="extract_duplicates_btn">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>600</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Run</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="import_duplicates_btn">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>600</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Import File...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_duplicates_btn">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>600</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="GMGNTracker">
+    <attribute name="title">
+     <string>GMGN Tracker</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>30</y>
+       <width>811</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>20</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="title">
+      <string>Wallet Address</string>
+     </property>
+     <widget class="QTextEdit" name="wallet_address">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>40</y>
+        <width>651</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="get_wallet_info_btn">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>600</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Get Wallet Info</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_wallet_info_btn">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>600</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic Light</family>
+       <pointsize>17</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Save File</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="wallet_info_viewer">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>250</y>
+       <width>1061</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>close_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>655</x>
+     <y>445</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>410</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
